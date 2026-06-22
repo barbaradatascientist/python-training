@@ -59,3 +59,4 @@ if __name__ == '__main__':
     
     array = [31, 2, 30.2, 1, 100.5, 0]
     print(BUCKET_SORT(array))
+ 
