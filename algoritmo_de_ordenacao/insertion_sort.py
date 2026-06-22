@@ -20,7 +20,7 @@ função insertion_sort(vetor):
         
 '''
 
-def insertion_sort(vetor):
+def INSERTION_SORT(vetor):
     
     for i in range(1, len(vetor)):
         aux = vetor[i]
@@ -38,4 +38,4 @@ if __name__ == '__main__':
     
     vet = [7, 3, 1, 8, 10, 0]
     
-    print(insertion_sort(vet))
+    print(INSERTION_SORT(vet))

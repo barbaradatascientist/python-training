@@ -35,7 +35,7 @@ função busca_ternaria(vetor_ordenado, valor, inicio_vetor, fim_vetor){
        
 '''
 
-def busca_ternaria(vetor_ordenado, valor, inicio_vetor, fim_vetor):
+def BUSCA_TERNARIA(vetor_ordenado, valor, inicio_vetor, fim_vetor):
     
     if inicio_vetor > fim_vetor:
         return -1
@@ -50,16 +50,16 @@ def busca_ternaria(vetor_ordenado, valor, inicio_vetor, fim_vetor):
         return m2
        
     elif vetor_ordenado[m1] > valor:
-        return busca_ternaria(vetor_ordenado, valor, inicio_vetor, m1 - 1)
+        return BUSCA_TERNARIA(vetor_ordenado, valor, inicio_vetor, m1 - 1)
         
     elif vetor_ordenado[m2] < valor:
-        return busca_ternaria(vetor_ordenado, valor, m2 + 1, fim_vetor)
+        return BUSCA_TERNARIA(vetor_ordenado, valor, m2 + 1, fim_vetor)
         
     else:
-        return busca_ternaria(vetor_ordenado, valor, m1 + 1, m2 - 1)   
+        return BUSCA_TERNARIA(vetor_ordenado, valor, m1 + 1, m2 - 1)   
         
 if __name__ == '__main__':
     
     vetor = [0, 1, 2, 3, 5, 7, 11, 13, 17]     
     
-    print(busca_ternaria(vetor, 17, 0, 8))
+    print(BUSCA_TERNARIA(vetor, 17, 0, 8))

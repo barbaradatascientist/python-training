@@ -30,7 +30,7 @@ função busca_binária(vetor_ordenado, valor, incio_vetor, fim_vetor){
 }
 '''
 
-def busca_binaria(vetor_ordenado, valor, inicio_vetor, fim_vetor):
+def BUSCA_BINARIA(vetor_ordenado, valor, inicio_vetor, fim_vetor):
     
     if inicio_vetor > fim_vetor:
         return - 1;
@@ -41,13 +41,13 @@ def busca_binaria(vetor_ordenado, valor, inicio_vetor, fim_vetor):
         return indice
     
     elif vetor_ordenado[indice] > valor:
-        return busca_binaria(vetor_ordenado, valor, inicio_vetor, indice - 1)
+        return BUSCA_BINARIA(vetor_ordenado, valor, inicio_vetor, indice - 1)
         
     else:
-        return busca_binaria(vetor_ordenado, valor, indice + 1, fim_vetor)
+        return BUSCA_BINARIA(vetor_ordenado, valor, indice + 1, fim_vetor)
 
 
 if __name__ == '__main__':
     vetor = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
     
-    print(busca_binaria(vetor, 'C', 0, 6))
+    print(BUSCA_BINARIA(vetor, 'C', 0, 6))
